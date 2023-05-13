@@ -1,13 +1,13 @@
-public class Mamifero extends Animal {
+public abstract class Mamifero extends Animal {
     private String quantidadePelos;
     private String ultimoAlimento;
 
     public Mamifero(){}
 
-    public Mamifero(int id, String nome, int idade, double peso, Familia familia, String quantidadePelos){
+    public Mamifero(int id, String nome, int idade, double peso, Familia familia, String quantidadePelos, String ultimoAlimento){
         super(id, nome, idade, peso, familia);
         this.quantidadePelos = quantidadePelos;
-        this.ultimoAlimento = "";
+        this.ultimoAlimento = ultimoAlimento;
     }
 
     public String getQuantidadePelos() {

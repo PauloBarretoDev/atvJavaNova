@@ -1,10 +1,10 @@
-public class Ave extends Animal {
+public abstract class Ave extends Animal {
     private double envergaduraAsas;
     private boolean voa;
 
-    private Ave(){}
+    public Ave(){}
 
-    private Ave(int id, String nome, int idade, double peso, Familia familia, double envergaduraAsas, boolean voa){
+    public Ave(int id, String nome, int idade, double peso, Familia familia, double envergaduraAsas, boolean voa){
         super(id, nome, idade, peso, familia);
         this.envergaduraAsas = envergaduraAsas;
         this.voa = voa;
@@ -24,6 +24,10 @@ public class Ave extends Animal {
 
     public void setVoa(boolean voa){
         this.voa = voa;
+    }
+
+    public String ehVoador(){
+        return "A ave ...";
     }
     
 }

@@ -1,19 +1,24 @@
-public abstract class Familia {
-    private String familiaBiologica;
+public class Familia {
+    private String familia;
 
     public Familia(){
 
     }
 
-    public Familia(String familiaBiologica){
-        this.familiaBiologica = familiaBiologica;
+    public Familia(String familia){
+        this.familia = familia;
     }
 
-    public String getFamiliaBiologica() {
-        return familiaBiologica;
+    public String getFamilia() {
+        return familia;
     }
 
-    public void setFamiliaBiologica(String familiaBiologica) {
-        this.familiaBiologica = familiaBiologica;
+    public void setFamilia(String familia) {
+        this.familia = familia;
+    }
+
+    @Override
+    public String toString() {
+        return this.familia;
     }
 }
